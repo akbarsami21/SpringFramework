@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.springcore.collections.Employ" name="emp1">
+		<property name="name" value="Akbar Sami" />
+
+		<!-- List -->
+		<property name="phones">
+			<list>
+				<value>01234567891</value>
+				<value>01234567198</value>
+			</list>
+		</property>
+
+		<!-- Set -->
+		<property name="email">
+			<set>
+				<value>emp1@gmail.com</value>
+				<value>emp12@gmail.com</value>
+			</set>
+		</property>
+
+		<!-- Map -->
+		<property name="workDuration">
+			<map>
+				<entry key="Saturday" value="9hours" />
+				<entry key="Sunday" value="10hours" />
+			</map>
+		</property>
+
+		<!-- Properties -->
+		<property name="prop">
+			<props>
+				<prop key="age">21</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

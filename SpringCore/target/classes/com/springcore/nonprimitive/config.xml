@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.springcore.nonprimitive.Student" name="student1">
+		<property name="studentId">
+			<value>2253</value>
+		</property>
+
+		<property name="studentName">
+			<value>Akbar Sami</value>
+		</property>
+
+		<property name="studentAddress">
+			<value>Hathazari,Chittagong</value>
+		</property>
+
+	</bean>
+
+	<bean class="com.springcore.nonprimitive.Student" name="student2">
+		<property name="studentId">
+			<value>2254</value>
+		</property>
+
+		<property name="studentName">
+			<value>Habibul Saikat</value>
+		</property>
+
+		<property name="studentAddress">
+			<value>Bashkhali,Chittagong</value>
+		</property>
+
+	</bean>
+
+	<!-- value as a attribute -->
+	<bean class="com.springcore.nonprimitive.Student" name="student3">
+		<property name="studentId" value="103" />
+		<property name="studentName" value="C" />
+		<property name="studentAddress" value="Dhaka" />
+	</bean>
+
+	<!-- using p schema -->
+	<bean class="com.springcore.nonprimitive.Student" name="student4"
+		p:studentId="104" p:studentName="D" p:studentAddress="Comilla" />
+
+</beans>
